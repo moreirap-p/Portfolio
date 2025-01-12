@@ -1,0 +1,257 @@
+/** MISE EN PAGE **/
+
+body, html { 
+    scroll-behavior: smooth;   
+    font-family: Helvetica, sans-serif;
+
+    /* fix anti trucs bizarres par défaut de certaines navigateurs*/
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#bg-acceuil {
+    background: linear-gradient(0deg, #a4a47b 0%,#a79476 12.5%, #967c72 25%, #a7767e 37.5%, #96728c 50%, #9f76a7 62.5%, #7e6897 75%, #8899b6 90%, #b4d8d8 100%);
+}
+
+#bg-0 {
+    background: linear-gradient(0deg, #635370 0%,#4a506a 74%);
+}
+
+#bg-1 {
+    background: linear-gradient(0deg, #6d815f 0%,#c9965b 100%);
+}
+
+#bg-2 {
+    background: linear-gradient(0deg, #70b8bf 0%,#5b78c9 100%);
+}
+
+main p {
+    text-align: left;
+    margin-right: 4%;
+    margin-left: 4%;
+}
+
+.box {
+    background: linear-gradient(0deg, #F0F0F0 0%, #FFF 64%);
+    margin: 1% 10%;
+    border-radius: 4px;
+}
+
+.dashed {
+    border-top: 2px dashed;
+    opacity: 20%;
+}
+
+a {
+    color: #690069;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.horizontal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.horizontal p {
+    width:100%;
+}
+
+#current-page {
+    color: goldenrod;
+    background-color: #444;
+}
+
+#lien-retour {
+    display: block;
+    background-color: #232F3E;
+    color: white;
+    font-style: normal;
+    transition: all 104ms ease;
+
+    margin: 20px auto;
+    padding: 10px;
+    max-width: 10%;
+}
+
+#lien-retour:hover {
+    background-color: #414e5d;
+    font-style: bold;
+    text-decoration: none;
+    transform: scale(1.04);
+}
+
+
+/** IMAGES **/
+
+.shadow, .box {
+    filter: drop-shadow(0 0 0.27rem rgba(0, 0, 0, 0.19));
+}
+
+.pic, .pic-large {
+    max-width: 10rem;
+    max-height: 10rem;
+    margin: 2%;
+    filter: drop-shadow(0 0 0.29rem rgba(0, 0, 0, 0.4));
+}
+
+.pic-large {
+    max-width: 14rem;
+    max-height: 14rem;
+}
+
+.mini-logo {
+    width: 2rem;
+    height: 2rem;
+    vertical-align: middle;
+}
+
+.medium {
+    max-width: 7rem;
+    max-height: 7rem;
+}
+
+
+/** FOOTER **/
+
+footer {
+    background: linear-gradient(180deg, #413e3c 0%, #2a2827 100%);
+    padding: 5px 10% 5px 10%;
+    color: white;
+}  
+
+#bas-de-page {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer img {
+    height: 2rem;
+    width: 2rem;
+}
+
+
+/** MENU DEROULANT **/
+
+header {
+    top: 0;
+    position: sticky;
+    z-index: 99;
+}
+
+nav {
+    display: flex;
+    padding: 0;
+    background-image: linear-gradient(180deg, #222 0%, #000 100%);
+    justify-content: center;
+}
+
+nav a {
+    display:block;
+    min-width: 120px;
+    margin: 0.8rem;
+    padding: 0.6rem;
+    text-align: center;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    border-radius: 2px;
+    filter: none;
+    transition: all 240ms;
+}
+
+.submenu {
+    position: absolute;
+    display: none;
+}
+
+.submenu-parent:hover div.submenu {
+    background-color: black;
+    display: block;
+}
+
+nav a:hover {
+    background-color: black;
+    color: white;
+    filter: drop-shadow(0 0 0.5rem rgba(204, 189, 93, 0.74));
+}
+
+
+/** RESPONSIVE **/
+
+@media screen and (max-width: 900px) {
+    .box {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .box {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    nav a {
+        margin-left: 0.4rem;
+        margin-right: 0.4rem;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .horizontal {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+/** Ajustementes Prioritaires **/
+
+.no-bt-margin {
+    margin-bottom: 0;
+}
+
+.extra-tp-margin {
+    margin-top: 2%;
+}
+
+.no-margin {
+    margin: 0;
+}
+
+.rounded, .box {
+    border-radius: 4px;
+}
+
+.round {
+    border-radius: 100%;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.trans {
+    opacity: 69%;
+}
+
+.trans-plus {
+    opacity: 49%;
+}
+
+.force-block {
+    display:grid;
+}
