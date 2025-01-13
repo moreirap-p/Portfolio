@@ -3,6 +3,7 @@
 body, html { 
     scroll-behavior: smooth;   
     font-family: Helvetica, sans-serif;
+    transition: all 104ms ease;
 
     /* fix anti trucs bizarres par défaut de certaines navigateurs*/
     margin: 0;
@@ -55,6 +56,11 @@ a {
 
 a:hover {
     text-decoration: underline;
+    color: #970097;
+}
+
+a:hover, .mini-logo:hover {
+    transform: scale(1.04);
 }
 
 .horizontal {
@@ -67,7 +73,7 @@ a:hover {
     width:100%;
 }
 
-#current-page {
+.current-page {
     color: goldenrod;
     background-color: #444;
 }
@@ -76,8 +82,6 @@ a:hover {
     display: block;
     background-color: #232F3E;
     color: white;
-    font-style: normal;
-    transition: all 104ms ease;
 
     margin: 20px auto;
     padding: 10px;
@@ -86,9 +90,7 @@ a:hover {
 
 #lien-retour:hover {
     background-color: #414e5d;
-    font-style: bold;
     text-decoration: none;
-    transform: scale(1.04);
 }
 
 
@@ -114,11 +116,16 @@ a:hover {
     width: 2rem;
     height: 2rem;
     vertical-align: middle;
+    margin-right: 4px;
 }
 
 .medium {
     max-width: 7rem;
     max-height: 7rem;
+}
+
+#ndi {
+    filter: drop-shadow(0 -0.5rem 1.82rem rgb(0, 0, 0));
 }
 
 
@@ -169,7 +176,7 @@ nav a {
     text-decoration: none;
     border-radius: 2px;
     filter: none;
-    transition: all 240ms;
+    transition: all 204ms;
 }
 
 .submenu {
@@ -214,6 +221,10 @@ nav a:hover {
     .horizontal {
         display: flex;
         flex-direction: column;
+    }
+
+    .haut2page {
+        display: none;
     }
 }
 

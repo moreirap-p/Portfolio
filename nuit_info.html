@@ -12,11 +12,11 @@
   <header>
     <nav>
       <div><a href="index.html"><b>Accueil</b></a></div>
-      <div class="submenu-parent"><a id="current-page" href=""><b>Réalisations</b></a>
+      <div class="submenu-parent"><a class="current-page" href=""><b>Réalisations</b></a>
         <div id="submenu-proj" class="submenu">
           <div><a href="trains.html">TRAINS</a></div>
           <div><a href="sae3a.html">SAE 3a</a></div>
-          <div><a id="current-page" href="#retour">Nuit de l'info</a></div>
+          <div><a class="current-page" href="#retour">Nuit de l'info</a></div>
         </div>
       </div>
     </nav>
@@ -24,10 +24,13 @@
 
   <main id="bg-0">
     <div class="box extra-tp-margin">
-      <h1 class="no-bt-margin">Réalisations - Nuit de l'info 2024: Race for Water <a
-          href="https://developer.mozilla.org/fr/docs/Web/JavaScript"><img class="mini-logo" src="images/js.webp"
-            alt="js"></a></h1>
-      <p>Dans le contexte d'une compétition non-obligatoire à l'IUT (la nuit de l'info), nous avons dû réaliser une application ludique, faite avec <a><b>Node.js</b></a> et le <a><b>framework Express</b></a>, pour la fondation Race for Water, qui a pour mission de préserver l'eau et les océans, en particulier face à la pollution plastique.</p>
+      <img id="ndi" class="pic-large no-bt-margin haut2page" src="images/nuit2linfo.webp" alt="logo-nuit-de-l-info">
+      <h1 class="no-bt-margin">Réalisations - Nuit de l'info 2024: Race for Water 
+        <a href="https://developer.mozilla.org/fr/docs/Web/JavaScript"><img class="mini-logo" src="images/js.webp" alt="js"></a>
+      </h1>
+      <p>Dans le contexte d'une compétition nationale non-obligatoire à l'IUT (la <a href="https://nuitdelinfo.com/"><b>Nuit de l'Info</b></a>), nous avons dû réaliser une application ludique, faite avec <a href="https://nodejs.org/fr"><b>Node.js</b></a> et le <a href="https://expressjs.com/"><b>framework Express</b></a>, pour la fondation <a href="https://www.raceforwater.org/fr/"><b>Race for Water</b></a>, qui a pour mission de préserver l'eau et les océans, en particulier face à la pollution plastique. Le tout en seulement 16 heures.</p>
+      <p>L'objectif était de faire le parallèle entre des parties du corps humain et l'océan pour sensibiliser sur le sujet. Nous avons décidé de faire une page d'acceuil qui agit comme une carte à explorer, où il faut trouver des organes répendues un peu partout. Cliquer sur l'un de ses organes révèle alors le lien entre humain et organisme marin via une page explicative.</p>
+      <p class="italic">Il y avait également 2 podcasts parlant de la pollution des eaux à éditer et à inclure quelque-part dans le site.</p>
 
       <p>Ce projet à été fait en équipe de 6, avec l'aide de:</p>
 
@@ -63,11 +66,22 @@
         </div>
       </div>  
 
-      <div>
-        <hr class="dashed">
-        <p>Ce projet représente mes premiers pas en <b>JS</b>, j'ai débuté un système de Captcha ludique, même si cette partie n'a pas atteint le rendu final.</p>
-        <p>Il m'a aussi montré les bonnes pratiques à prendre pour des productions aussi rapides (l'adaptabilité & la prise d'initaives).</p>
+      <hr class="dashed">
+
+      <div class="horizontal">
+        <a href="images/ndi-0.webp"><img class="pic-large" src="images/ndi-0.webp" alt="nuitdelinfo-interface"></a>
+        <a href="images/ndi-1.webp"><img class="pic-large" src="images/ndi-1.webp" alt="nuitdelinfo-interface"></a>
+        <a href="images/ndi-2.PNG"><img class="pic-large" src="images/ndi-2.PNG" alt="nuitdelinfo-indications"></a>
+        <a href="images/ndi-4.webp"><img class="pic-large" src="images/ndi-4.webp" alt="nuitdelinfo-photo-groupe"></a>
       </div>
+
+      <a href="https://github.com/Doruo/NDI-2024-RaceForWater">dépôt GitHub</a>
+      
+      <hr class="dashed">
+      <h2>Contribution / Apprentissage</h2>
+      <p>Ce projet représente mes premiers pas en <b>JS</b>, j'ai débuté un système de Captcha (ensuite reprit par Mattéo), et j'ai édité les podcasts <span class="trans">(même si cette partie n'a pas atteint le rendu final)</span>.</p>
+      <p>Ce projet m'a aussi montré les bonnes pratiques à prendre pour des productions aussi rapides (la réactivité & la prise d'initiatives).</p>
+      
     </div>  
 
     <div>
