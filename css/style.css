@@ -203,6 +203,11 @@ nav a:hover {
         margin-left: 5%;
         margin-right: 5%;
     }
+
+    .pic-large {
+        max-width: 10rem;
+        max-height: 10rem;
+    }    
 }
 
 @media screen and (max-width: 720px) {
