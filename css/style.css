@@ -41,7 +41,6 @@ main p {
 .box {
     background: linear-gradient(0deg, #F0F0F0 0%, #FFF 64%);
     margin: 1% 10%;
-    border-radius: 4px;
 }
 
 .dashed {
@@ -85,7 +84,7 @@ a:hover, .mini-logo:hover {
 
     margin: 20px auto;
     padding: 10px;
-    max-width: 10%;
+    max-width: 7rem;
 }
 
 #lien-retour:hover {
@@ -133,7 +132,7 @@ a:hover, .mini-logo:hover {
 
 footer {
     background: linear-gradient(180deg, #413e3c 0%, #2a2827 100%);
-    padding: 5px 10% 5px 10%;
+    padding: 0.5% 10% 0.5% 10%;
     color: white;
 }  
 
@@ -198,16 +197,17 @@ nav a:hover {
 
 /** RESPONSIVE **/
 
+@media screen and (max-width: 1240px) {
+    .long-imgs {
+        display: inline-block;
+    }
+}
+
 @media screen and (max-width: 900px) {
     .box {
         margin-left: 5%;
         margin-right: 5%;
     }
-
-    .pic-large {
-        max-width: 10rem;
-        max-height: 10rem;
-    }    
 }
 
 @media screen and (max-width: 720px) {
@@ -228,7 +228,7 @@ nav a:hover {
         flex-direction: column;
     }
 
-    .haut2page {
+    .not-on-mobile {
         display: none;
     }
 }
