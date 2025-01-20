@@ -58,7 +58,7 @@ a:hover {
     color: #970097;
 }
 
-a:hover, .mini-logo:hover {
+a:hover, .mini-logo:hover, #reals:hover {
     transform: scale(1.04);
 }
 
@@ -70,11 +70,6 @@ a:hover, .mini-logo:hover {
 
 .horizontal p {
     width:100%;
-}
-
-.current-page {
-    color: goldenrod;
-    background-color: #444;
 }
 
 #lien-retour {
@@ -164,7 +159,7 @@ nav {
     justify-content: center;
 }
 
-nav a {
+nav a, #reals {
     display:block;
     min-width: 120px;
     margin: 0.8rem;
@@ -188,10 +183,15 @@ nav a {
     display: block;
 }
 
-nav a:hover {
+nav a:hover, #reals:hover {
     background-color: black;
     color: white;
     filter: drop-shadow(0 0 0.5rem rgba(204, 189, 93, 0.74));
+}
+
+.current-page, #reals.current-page {
+    color: goldenrod;
+    background-color: #444;
 }
 
 
@@ -216,7 +216,7 @@ nav a:hover {
         margin-right: 0;
     }
 
-    nav a {
+    nav a, #reals {
         margin-left: 0.4rem;
         margin-right: 0.4rem;
     }
