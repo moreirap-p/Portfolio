@@ -194,6 +194,10 @@ nav a:hover, #reals:hover {
     background-color: #444;
 }
 
+#reals {
+    display: none;
+}
+
 
 /** RESPONSIVE **/
 
@@ -219,6 +223,14 @@ nav a:hover, #reals:hover {
     nav a, #reals {
         margin-left: 0.4rem;
         margin-right: 0.4rem;
+    }
+
+    #reals {
+        display: block;
+    }
+
+    .reduisible {
+        display: none;
     }
 }
 
