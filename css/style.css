@@ -167,6 +167,7 @@ nav a, #reals {
     text-align: center;
     background-color: white;
     color: black;
+    font-weight: bold;
     text-decoration: none;
     border-radius: 2px;
     filter: none;
