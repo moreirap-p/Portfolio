@@ -53,7 +53,7 @@ a {
     text-decoration: none;
 }
 
-a:hover {
+a:not(footer a, nav a):hover {
     text-decoration: underline;
     color: #970097;
 }
