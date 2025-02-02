@@ -284,3 +284,11 @@ nav a:hover, #reals:hover {
 .force-block {
     display:grid;
 }
+
+
+/** Dark Mode **/
+
+.dark-box {
+    color: white;
+    background: linear-gradient(0deg, #000 0%, #0F0F0F 64%);
+}
