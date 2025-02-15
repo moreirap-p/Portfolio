@@ -58,7 +58,7 @@ a:not(footer a, nav a):hover {
     color: #970097;
 }
 
-a:hover, .mini-logo:hover, #reals:hover {
+a:hover, .mini-logo:hover, #reals:hover, nav img:hover {
     transform: scale(1.04);
 }
 
