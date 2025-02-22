@@ -3,11 +3,12 @@
 body, html { 
     scroll-behavior: smooth;   
     font-family: Helvetica, sans-serif;
-    transition: all 104ms ease;
 
     /* fix anti trucs bizarres par défaut de certaines navigateurs*/
     margin: 0;
     padding: 0;
+    height: 100%;
+    width: 100%;
 }
 
 main {
@@ -170,7 +171,6 @@ nav a, #reals, nav img {
     text-decoration: none;
     border-radius: 2px;
     filter: none;
-    transition: all 204ms;
 }
 
 nav a, #reals {
@@ -288,6 +288,10 @@ nav a:hover, #reals:hover, nav img:hover {
 
 .trans-plus {
     opacity: 49%;
+}
+
+nav a, #reals, nav img, #lien-retour {
+    transition: all 104ms ease;
 }
 
 .force-block {
