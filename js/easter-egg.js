@@ -6,10 +6,11 @@ let nb = -1
 
 if (localStorage.getItem('sh') !== 'on') {
     pic.addEventListener("mouseenter", nextTitle)
-    localStorage.setItem('sh','on')
 }
 
 function nextTitle() {
+    localStorage.setItem('sh','on')
+
     nb++
     pic.title = titles[nb]
 

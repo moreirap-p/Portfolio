@@ -4,7 +4,7 @@ body, html {
     scroll-behavior: smooth;   
     font-family: Helvetica, sans-serif;
 
-    /* fix anti trucs bizarres par défaut de certaines navigateurs*/
+    /* fix anti trucs bizarres par défaut de certains navigateurs*/
     margin: 0;
     padding: 0;
     height: 100%;
