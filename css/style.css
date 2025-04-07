@@ -33,6 +33,10 @@ main {
     background: linear-gradient(0deg, #70b8bf 0%,#5b78c9 100%);
 }
 
+#bg-4 {
+    background: linear-gradient(0deg, #494949 0%,#272727 100%);
+}
+
 main p {
     text-align: left;
     margin-right: 4%;
@@ -216,14 +220,14 @@ nav a:hover, #reals:hover, nav img:hover {
     }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 926px) {
     .box {
         margin-left: 5%;
         margin-right: 5%;
     }
 }
 
-@media screen and (max-width: 726px) {
+@media screen and (max-width: 900px) {
     .box {
         margin-left: 0;
         margin-right: 0;
