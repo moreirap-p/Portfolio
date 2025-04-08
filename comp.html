@@ -7,6 +7,7 @@
     <link rel="icon" type="image/png" href="images/favicon.webp">
     <title>Portfolio - Paulo</title>
     <script defer type="text/javascript" src="js/dark-mode.js"></script>
+    <script defer type="text/javascript" src="js/comps.js"></script>
     <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 
@@ -20,11 +21,13 @@
                 <div><a href="trains.html">TRAINS</a></div>
                 <div><a href="sae3a.html">SAE 3a</a></div>
                 <div><a href="nuit_info.html">Nuit de l'info</a></div>
+                <div><a href="nuisance.html">Nuisance moustique</a></div>
             </div>
         </div>
         <div class="reduisible"><a href="trains.html">TRAINS</a></div>
         <div class="reduisible"><a href="sae3a.html">SAE 3a</a></div>
         <div class="reduisible"><a href="nuit_info.html">Nuit de l'info</a></div>
+        <div class="reduisible"><a href="nuisance.html">Nuisance moustique</a></div>
         <div id="mode-toggle"><img id="switch" src="images/dark-mode.webp" alt="mode sombre" onmouseenter="switchIconToLight()" onmouseleave="switchIconToDark()"></div>
     </nav>
 </header>
@@ -33,12 +36,62 @@
     <div class="box extra-tp-margin">
         <h1 class="no-bt-margin">Apprentissage des Compétences</h1>
         <hr class="dashed">
-        <p class="italic trans">coming soon....</p>
+        <div class="horizontal">
+            <a class="btn-comp rounded" onclick="goToPage(1)">
+                <span>Compétence 1</span>
+            </a>
+
+            <a class="btn-comp rounded" onclick="goToPage(2)">
+                <span>Compétence 2</span>
+            </a>
+
+            <a class="btn-comp rounded" onclick="goToPage(3)">
+                <span>Compétence 3</span>
+            </a>
+
+            <a class="btn-comp rounded" onclick="goToPage(4)">
+                <span>Compétence 4</span>
+            </a>
+
+            <a class="btn-comp rounded" onclick="goToPage(5)">
+                <span>Compétence 5</span>
+            </a>
+
+            <a class="btn-comp rounded" onclick="goToPage(6)">
+                <span>Compétence 6</span>
+            </a>
+        </div>
     </div>
 
     <div class="box">
-        <h2>Lorem Ipsum</h2>
-        <p class="italic trans">coming soon....</p>
+        <div id="default-contenu">
+            <h2>Default Title</h2>
+            <p class="italic trans">coming soon....</p>
+        </div>
+
+        <div id="c1">
+            <h2>Compétence 1 - Réaliser</h2>
+        </div>
+
+        <div id="c2">
+            <h2>Compétence 2 - Optimiser</h2>
+        </div>
+
+        <div id="c3">
+            <h2>Compétence 3 - Administrer</h2>
+        </div>
+
+        <div id="c4">
+            <h2>Compétence 4 - Gérer</h2>
+        </div>
+
+        <div id="c5">
+            <h2>Compétence 5 - Conduire</h2>
+        </div>
+
+        <div id="c6">
+            <h2>Compétence 6 - Collaborer</h2>
+        </div>
     </div>
 
     <div>
