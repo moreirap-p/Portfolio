@@ -57,7 +57,7 @@ main {
 }
 
 #bg-11 {
-    background: linear-gradient(0deg, #FDCEA5 0%,#AAD3DF 100%);
+    background: linear-gradient(0deg, #FEE59C 0%,#AAD3DF 100%);
 }
 
 main p {
@@ -125,15 +125,19 @@ a:hover, .mini-logo:hover, #reals:hover, nav img:hover {
 }
 
 .pic, .pic-large {
+    filter: drop-shadow(0 0 0.29rem rgba(0, 0, 0, 0.4));
+}
+
+.pic {
     max-width: 10rem;
     max-height: 10rem;
     margin: 2%;
-    filter: drop-shadow(0 0 0.29rem rgba(0, 0, 0, 0.4));
 }
 
 .pic-large {
     max-width: 14rem;
     max-height: 14rem;
+    margin: 2% 0;
 }
 
 .mini-logo {
@@ -285,11 +289,16 @@ nav a:hover, #reals:hover, nav img:hover {
     display: none;
 }
 
+
 /** RESPONSIVE **/
 
-@media screen and (max-width: 1240px) {
+@media screen and (max-width: 1248px) {
     .long-imgs {
         display: inline-block;
+    }
+
+    .pic-large {
+        margin: 2%;
     }
 }
 
@@ -385,6 +394,6 @@ nav a, #reals, nav img, #lien-retour, .btn-comp {
     background: linear-gradient(0deg, #000 0%, #0F0F0F 64%);
 }
 
-.dark-mode main a {
+.dark-mode main a:not(.btn-comp) {
     color: #FF81FF;
 }
