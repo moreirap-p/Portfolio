@@ -97,7 +97,7 @@ a:hover, .mini-logo:hover, #reals:hover, nav img:hover {
 }
 
 .horizontal p {
-    width:100%;
+    width: 100%;
 }
 
 #lien-retour, .btn-comp {
@@ -243,6 +243,10 @@ nav a:hover, #reals:hover, nav img:hover {
 
 /** COMPs **/
 
+#btn-row {
+    overflow-x: hidden;
+}
+
 .btn-comp {
     padding: 10px;
 }
@@ -303,7 +307,7 @@ nav a:hover, #reals:hover, nav img:hover {
 }
 
 @media screen and (max-width: 1070px) {
-    nav a, #reals {
+    nav a, #reals, nav img {
         margin-left: 0.4rem;
         margin-right: 0.4rem;
     }
@@ -317,10 +321,10 @@ nav a:hover, #reals:hover, nav img:hover {
     }
 }
 
-@media screen and (max-width: 926px) {
+@media screen and (max-width: 962px) {
     .box {
-        margin-left: 5%;
-        margin-right: 5%;
+        margin-left: 4.5%;
+        margin-right: 4.5%;
     }
 }
 
@@ -336,6 +340,15 @@ nav a:hover, #reals:hover, nav img:hover {
     .horizontal {
         display: flex;
         flex-direction: column;
+        overflow: hidden;
+    }
+
+    .horizontal p {
+        width: auto;
+    }
+
+    #pualo {
+        align-self: center;
     }
 
     .not-on-mobile {
