@@ -163,7 +163,7 @@ footer {
     background: linear-gradient(180deg, #413e3c 0%, #2a2827 100%);
     padding: 0.5% 10% 0.5% 10%;
     color: white;
-}  
+}
 
 #bas-de-page {
     display: flex;
@@ -177,6 +177,9 @@ footer img {
     width: 2rem;
 }
 
+footer span, footer img {
+    vertical-align: middle;
+}
 
 /** MENU DEROULANT **/
 
