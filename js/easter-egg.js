@@ -19,3 +19,9 @@ function nextTitle() {
         pic.title = titles[0]
     }
 }
+
+function colour() {
+    const r = Math.floor(Math.random() * 361);
+    pic.style.filter = `drop-shadow(0 0 0.29rem rgba(0, 0, 0, 0.4)) hue-rotate(${r}deg)`;
+    //oui c un peu sale, je sais (-_-)
+}
