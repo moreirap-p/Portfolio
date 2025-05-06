@@ -22,6 +22,6 @@ function nextTitle() {
 
 function colour() {
     const r = Math.floor(Math.random() * 361);
-    pic.style.filter = `drop-shadow(0 0 0.29rem rgba(0, 0, 0, 0.4)) hue-rotate(${r}deg)`;
-    //oui c un peu sale, je sais (-_-)
+    const shadow = getComputedStyle(pic).filter.replace(/hue-rotate\([^)]+\)/, '');
+    pic.style.filter = `${shadow}hue-rotate(${r}deg)`
 }
