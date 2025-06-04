@@ -96,6 +96,10 @@ a:hover, .mini-logo:hover, #reals:hover, nav img:hover {
     justify-content: space-around;
 }
 
+.job {
+    background: rgba(99, 99, 99, 0.1);
+}
+
 .horizontal p {
     width: 100%;
 }
@@ -250,7 +254,7 @@ nav a:hover, #reals:hover, nav img:hover {
     overflow-x: hidden;
 }
 
-.btn-comp {
+.btn-comp, .status {
     padding: 10px;
 }
 
@@ -293,6 +297,19 @@ nav a:hover, #reals:hover, nav img:hover {
 }
 
 #c1, #c2, #c3, #c4, #c5, #c6 {
+    display: none;
+}
+
+noscript {
+    color: red;
+}
+
+.status {
+    background: rgba(99, 99, 99, 0.4);
+    width: fit-content;
+}
+
+.hide {
     display: none;
 }
 
