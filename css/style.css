@@ -98,6 +98,7 @@ a:hover, .mini-logo:hover, #reals:hover, nav img:hover {
 
 .job {
     background: rgba(99, 99, 99, 0.1);
+    overflow: hidden;
 }
 
 .horizontal p {
@@ -345,6 +346,10 @@ noscript {
     .box {
         margin-left: 4.5%;
         margin-right: 4.5%;
+    }
+
+    .reduisible-thiner {
+        display: none;
     }
 }
 
