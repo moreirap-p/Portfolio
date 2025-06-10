@@ -33,29 +33,6 @@ main {
     background: linear-gradient(0deg, #70b8bf 0%,#5b78c9 100%);
 }
 
-#bg-4 {
-    background: linear-gradient(0deg, #545454 0%,#2d2d2d 100%);
-}
-
-#bg-5 {
-    background: linear-gradient(0deg, #E7D2D0 0%,#DF787F 100%);
-}
-#bg-6 {
-    background: linear-gradient(0deg, #F3E1CF 0%,#F6CCA3 100%);
-}
-#bg-7 {
-    background: linear-gradient(0deg, #F4E8B4 0%,#F7E371 100%);
-}
-#bg-8 {
-    background: linear-gradient(0deg, #E0E7D5 0%,#CCE8A3 100%);
-}
-#bg-9 {
-    background: linear-gradient(0deg, #C8D7EA 0%,#3F75A2 100%);
-}
-#bg-10 {
-    background: linear-gradient(0deg, #D5D0BB 0%,#868384 100%);
-}
-
 #bg-11 {
     background: linear-gradient(0deg, #FEE59C 0%,#AAD3DF 100%);
 }
@@ -81,7 +58,7 @@ a {
     text-decoration: none;
 }
 
-.box a:not(.btn-comp):hover {
+.box a:hover {
     text-decoration: underline;
     color: #970097;
 }
@@ -105,7 +82,7 @@ a:hover, .mini-logo:hover, #reals:hover, nav img:hover {
     width: 100%;
 }
 
-#lien-retour, .btn-comp {
+#lien-retour {
     color: white;
     margin: 20px auto;
     max-width: 7rem;
@@ -249,72 +226,6 @@ nav a:hover, #reals:hover, nav img:hover {
 }
 
 
-/** COMPs **/
-
-#btn-row {
-    overflow-x: hidden;
-}
-
-.btn-comp, .status {
-    padding: 10px;
-}
-
-.btn-comp:first-child {
-    background-color: #B21D21
-}
-.btn-comp:nth-child(2) {
-    background-color: #ED8846
-}
-.btn-comp:nth-child(3) {
-    background-color: #EEB819
-}
-.btn-comp:nth-child(4) {
-    background-color: #87C546
-}
-.btn-comp:nth-child(5) {
-    background-color: #051B44
-}
-.btn-comp:nth-child(6) {
-    background-color: #282526
-}
-
-.btn-comp:first-child:hover {
-    background-color: #DF787F
-}
-.btn-comp:nth-child(2):hover {
-    background-color: #F6CCA3
-}
-.btn-comp:nth-child(3):hover {
-    background-color: #F7E371
-}
-.btn-comp:nth-child(4):hover {
-    background-color: #CCE8A3
-}
-.btn-comp:nth-child(5):hover {
-    background-color: #3F75A2
-}
-.btn-comp:nth-child(6):hover {
-    background-color: #868384
-}
-
-#c1, #c2, #c3, #c4, #c5, #c6 {
-    display: none;
-}
-
-noscript {
-    color: red;
-}
-
-.status {
-    background: rgba(99, 99, 99, 0.4);
-    width: fit-content;
-}
-
-.hide {
-    display: none;
-}
-
-
 /** RESPONSIVE **/
 
 @media screen and (max-width: 1248px) {
@@ -416,7 +327,7 @@ noscript {
     opacity: 49%;
 }
 
-nav a, #reals, nav img, #lien-retour, .btn-comp {
+nav a, #reals, nav img, #lien-retour {
     transition: all 104ms ease;
 }
 
@@ -432,6 +343,6 @@ nav a, #reals, nav img, #lien-retour, .btn-comp {
     background: linear-gradient(0deg, #000 0%, #0F0F0F 64%);
 }
 
-.dark-mode main a:not(.btn-comp) {
+.dark-mode main a {
     color: #FF81FF;
 }
