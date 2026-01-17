@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="images/favicon.webp">
+  <title>Portfolio - MyAvatar</title>
+  <script defer type="text/javascript" src="js/dark-mode.js"></script>
+  <script defer type="text/javascript" src="js/twigification.js"></script>
+  <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+
+<body id="retour">
+  <header>
+    <nav>
+      <div><a href="index.html">Accueil</a></div>
+      <div class="submenu-parent"><a id="reals" class="current-page">Réalisations</a>
+        <div class="submenu">
+          <div><a href="trains.html">TRAINS</a></div>
+          <div><a href="sae3a.html">SAE 3a</a></div>
+          <div><a href="nuisance.html">Nuisance moustique</a></div>
+          <div><a class="current-page" href="#retour">MyAvatar</a></div>
+        </div>
+      </div>
+      <div class="reduisible"><a href="trains.html">TRAINS</a></div>
+      <div class="reduisible"><a href="sae3a.html">SAE 3a</a></div>
+      <div class="reduisible"><a href="nuisance.html">Nuisance moustique</a></div>
+      <div class="reduisible"><a class="current-page" href="myavatar.html">MyAvatar</a></div>
+      <div id="mode-toggle"><img id="switch" src="images/dark-mode.webp" alt="mode sombre" title="Thème" onmouseenter="switchIconToLight()" onmouseleave="switchIconToDark()"></div>
+    </nav>
+  </header>
+
+  <main id="bg-0">
+    <div class="box extra-tp-margin">
+      <h1 class="no-bt-margin">Réalisations - MyAvatar
+        <a href="https://www.php.net/"><img class="mini-logo" src="images/php.webp" alt="php" title="PHP"></a>
+        <a href="https://symfony.com/"><img class="mini-logo" src="images/symfony.webp" alt="symfony" title="Symfony"></a>
+        <a href="https://developer.mozilla.org/fr/docs/Web/JavaScript"><img class="mini-logo" src="images/js.webp" alt="js" title="JavaScript"></a>
+        <a href="https://getbootstrap.com/"><img class="mini-logo" src="images/bootstrap.webp" alt="bootstrap" title="Bootstrap"></a>
+      </h1>
+      <p>Dans le contexte d'une SAE <span class="trans">(Situation d'Apprentissage et Évaluation)</span>, j'ai participé durant 4 semaines à la réalisation d'une application web, faite en <b>PHP</b> avec le framework <a href="https://symfony.com/"><b>Symfony</b></a>.
+        <br>Le but était de recréer les fonctionnalités principales de <a href="https://gravatar.com/"><b>Gravatar</b></a>: pouvoir centraliser tous ses liens, et héberger une photo de profil pour qu'elle soit modifiable en parallèle sur plusieurs plateformes.</p>
+      <p>Le projet mélange du php, twig, et un peu de <b>JS</b> pour que la page de profil soit réactive.</p>
+      <p>Enfin, il fallait créer des commandes Symfony, permettant d'ajouter et supprimer un utilisateur en une ligne.</p>
+
+      <p>Ce projet a été fait en équipe de 4, avec l'aide de:</p>
+
+      <div class="horizontal">
+        <div class="force-block">
+          <a href="https://www.linkedin.com/in/damien-rostaing/"><img class="pic round medium" src="images/damien.webp"
+              alt="linkedin-damien"></a>
+          <span>Damien Rostaing</span>
+        </div>
+
+        <div class="force-block">
+          <a href="https://www.linkedin.com/in/evan-nunes/"><img class="pic round medium" src="images/evan.webp"
+              alt="linkedin-evan"></a>
+          <span>Evan Nunes</span>
+        </div>
+
+        <div class="force-block">
+          <a href="https://www.linkedin.com/in/matt%C3%A9o-tordeux/"><img class="pic round medium" src="images/tordeux.webp"
+              alt="linkedin-mattéo"></a>
+          <span>Mattéo Tordeux</span>
+        </div>
+      </div>
+
+      <hr class="dashed">
+      <h2>Galerie</h2>
+      <div class="horizontal long-imgs">
+        <a href="images/ma-0.png"><img class="pic-large" src="images/ma-0.png" alt="myavatar-accueil"></a>
+        <a href="images/ma-1.png"><img class="pic-large" src="images/ma-1.png" alt="myavatar-page-utilisateur"></a>
+        <a href="images/ma-2.png"><img class="pic-large" src="images/ma-2.png" alt="myavatar-msg-flash"></a>
+        <a href="images/ma-4.png"><img class="pic-large" src="images/ma-4.png" alt="myavatar-commandes"></a>
+      </div>
+
+      <hr class="dashed">
+      <h2>Contribution / Apprentissage</h2>
+      <p>Ce projet représente mes premiers pas avec un <b>framework PHP</b>, j'ai notamment géré les liens ajoutables par les utilisateurs, le mode maintenance (redirection automatique), ainsi que la partie visuelle de la page d'accueil <span class="trans">(image 1)</span>.</p>
+      <p>De plus, pour tester rapidement les fonctionnalités des utilisateurs, je me suis entierement occupé des commandes suivantes:</p>
+
+      <p class="cmd">php bin/console remove:user [login]</p>
+      <p>Permet de supprimer un utilisateur (et sa photo de profil) à partir de son login.</p>
+
+      <p class="cmd">php bin/console add:user [login] [password] [mail] [role]</p>
+      <p>Ajoute un utilisateur. Aucun paramètre n'est obligatoire, car elle vérifie pour chacun s'il est vide, et si oui, demande à l'utilisateur d'entrer / choisir une valeur <span class="trans">(image 4)</span>. Pour les paramètres de contrainte "unique" comme le login et le mail, la commande vérifie qu'il n'existe pas déjà dans la bd.</p>
+
+    </div>
+
+    <div>
+      <a id="lien-retour" class="rounded" href="#retour">
+        <span>Retour en haut</span>
+      </a>
+    </div>
+  </main>
+
+  <div id="footer"></div>
+
+</body>
+
+</html>

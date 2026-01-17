@@ -37,6 +37,10 @@ main {
     background: linear-gradient(0deg, #FEE59C 0%,#AAD3DF 100%);
 }
 
+#bg-12 {
+    background: linear-gradient(0deg, #FFD0B8 0%,#FFA5C9 100%);
+}
+
 main p {
     text-align: left;
     margin-right: 4%;
@@ -197,6 +201,12 @@ nav a, #reals, nav img {
     filter: none;
 }
 
+.cmd {
+    padding: 10px;
+    background-color: #000;
+    color: #fc7;
+}
+
 nav a, #reals {
     min-width: 120px;
 }
@@ -351,4 +361,9 @@ nav a, #reals, nav img, #lien-retour {
 
 .dark-mode main a {
     color: #FF81FF;
+}
+
+.dark-mode .cmd {
+    color: #000;
+    background-color: #fff;
 }
