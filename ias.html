@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="images/favicon.webp">
+  <title>Portfolio - IAs</title>
+  <script defer type="text/javascript" src="js/dark-mode.js"></script>
+  <script defer type="text/javascript" src="js/twigification.js"></script>
+  <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+
+<body id="retour">
+  <header>
+    <nav>
+      <div><a href="index.html">Accueil</a></div>
+      <div class="submenu-parent"><a id="reals" class="current-page">Réalisations</a>
+		    <div class="submenu">
+              <div><a href="trains.html">TRAINS</a></div>
+              <div><a href="sae3a.html">SAE 3a</a></div>
+              <div><a href="nuisance.html">Nuisance moustique</a></div>
+              <div><a href="myavatar.html">MyAvatar</a></div>
+              <div><a class="current-page" href="#retour">IAs</a></div>
+            </div>
+	    </div>
+      <div class="reduisible"><a href="trains.html">TRAINS</a></div>
+      <div class="reduisible"><a href="sae3a.html">SAE 3a</a></div>
+      <div class="reduisible"><a href="nuisance.html">Nuisance moustique</a></div>
+      <div class="reduisible"><a href="myavatar.html">MyAvatar</a></div>
+      <div class="reduisible"><a class="current-page" href="ias.html">IAs</a></div>
+      <div id="mode-toggle"><img id="switch" src="images/dark-mode.webp" alt="mode sombre" title="Thème" onmouseenter="switchIconToLight()" onmouseleave="switchIconToDark()"></div>
+    </nav>
+  </header>
+
+  <main id="bg-12">
+    <div class="box extra-tp-margin">
+      <h1 class="no-bt-margin">Réalisations - Elaboration d'IAs
+        <a href="https://www.python.org/about/"><img class="mini-logo" src="images/python.webp" alt="python" title="Python"></a>
+        <a href="https://gymnasium.farama.org/"><img class="mini-logo" src="images/gymnasium.webp" alt="gymnasium" title="Gymnasium"></a>
+      </h1>
+      <p>Dans le contexte d'une SAE <span class="trans">(Situation d'Apprentissage et Évaluation)</span>, j'ai suivis durant une partie de l'année, des cours de <b>Stanford</b> <a class="italic trans" href="https://www.youtube.com/playlist?list=PLoROMvodv4rN4wG6Nk6sNpTEbuOSosZdX">(disponibles ici)</a> sur le <a>reinforcement learning</a> et les algorithmes qui le permettent.
+      Ces différents algorithmes ont ensuite été implémentés en <b>Python</b> sur des environnements de la librairie <b>Gymnasium</b> (qui se base sur la libraire <a href="https://aiwiki.ai/wiki/Gym">Gym</a> d'<a href="https://openai.com/about/">OpenAI</a>).</p>
+      <p>Les connaissances acquises ont ensuite été regroupées dans un document devant servir de cours pour introduir les concepts à des élèves.</p>
+      <p>De plus, le projet a été réalisé en applicant une méthode agile de développement, avec une revue de sprint <span class="trans">(= phase)</span> effectuée en présentiel chaque semaine.</p>
+
+      <p>Ce projet a été fait en équipe de 6, avec l'aide de:</p>
+
+      <div class="horizontal">
+        <div class="force-block">
+          <a href="https://www.linkedin.com/in/hicham-ferhani/"><img class="pic round medium" src="images/hicham.webp" alt="linkedin-hicham"></a>
+          <span>Hicham Ferhani</span>
+        </div>  
+
+        <div class="force-block">
+          <a href="https://www.linkedin.com/in/damien-rostaing/"><img class="pic round medium" src="images/damien.webp"
+              alt="linkedin-damien"></a>
+          <span>Damien Rostaing</span>
+        </div>
+
+        <div class="force-block">
+          <a href="https://www.linkedin.com/in/evan-nunes/"><img class="pic round medium" src="images/evan.webp"
+              alt="linkedin-evan"></a>
+          <span>Evan Nunes</span>
+        </div>
+
+        <div class="force-block">
+          <a href="https://www.linkedin.com/in/matt%C3%A9o-benhalima/"><img class="pic round medium" src="images/mattéo.webp" alt="linkedin-mattéo"></a>
+          <span>Mattéo Benhalima</span>
+        </div>
+
+        <div class="force-block">
+          <a href="https://www.linkedin.com/in/matt%C3%A9o-tordeux/"><img class="pic round medium" src="images/tordeux.webp" alt="linkedin-mattéo"></a>
+          <span>Mattéo Tordeux</span>
+        </div>
+      </div>
+
+      <hr class="dashed">
+      <h2>Galerie</h2>
+      <div class="horizontal long-imgs">
+        <a href="images/ia-0.png"><img class="pic-large" src="images/ia-0.png" alt="ia-policy-evaluation"></a>
+        <a href="images/ia-1.png"><img class="pic-large" src="images/ia-1.png" alt="ia-mountain-car"></a>
+        <a href="images/ia-2.png"><img class="pic-large" src="images/ia-2.png" alt="ia-sarsa"></a>
+        <a href="images/ia-4.png"><img class="pic-large" src="images/ia-4.png" alt="ia-sarsa2"></a>
+      </div>
+
+      <hr class="dashed">
+      <h2>Contribution / Apprentissage</h2>
+      <p>Il est important à noter que chacun d'entre nous a travaillé des méthodes / environnements différents. Actuellement, ma contribution principale à ce projet doit être l'algorithme de policy evaluation <span class="trans">(image 1)</span>.
+        Sinon, en terme d'implémentations j'ai fait un Q-Learning basique puis un SARSA sur MoutainCar (les réseaux de neuronnes arriveront prochainement).</p>
+      <p></p>
+    </div>
+
+    <div>
+      <a id="lien-retour" class="rounded" href="#retour">
+        <span>Retour en haut</span>
+      </a>
+    </div>
+
+  </main>
+
+  <div id="footer"></div>
+
+</body>
+
+</html>
